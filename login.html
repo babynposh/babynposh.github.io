@@ -4,16 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
 
 button {
   background-color: #4CAF50;
@@ -38,7 +28,8 @@ button:hover {
 
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin-top: 50px;
+  margin-bottom: -25px;
 }
 
 img.avatar {
@@ -48,9 +39,8 @@ img.avatar {
 }
 
 .container {
-  margin-top: 16px;
-  margin-right: 300px;
-  margin-left: 300px;
+  margin-bottom: 28px;
+  margin-left: 35%;
 }
 
 span.psw {
@@ -70,22 +60,27 @@ transform: translateX(-50%);
 
 <h2>Login Form</h2>
 
-<form action="https://hreilly14.github.io/" method="post">
   <div class="imgcontainer">
     <img src="pic23.JPG" alt="Avatar" class="avatar">
   </div>
+  <p class= "button" style="font-weight: bold; font-size: 2vw;">BabynPosh</p>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw" style="font-size: 2vw;"><b>Password:</b></label>
+    <input id="password" placeholder="Enter Password" style="height: 2vw; width: 16vw;">
   </div>
   <div class= "button">      
-    <button type="submit" style="width: 150px;">Login</button>
+<button onclick="window.location.href=verify();" style="width: 150px;">Login</button>
   </div>
-</form>
-
 </body>
+<script language="JavaScript">
+    function verify() {
+    var entry = document.getElementById("password").value;
+    var pword = String(entry)
+    if (pword == "hello") {
+      return "http://localhost:8000/starter_website.html"
+    }   else {return "https://www.google.com/"}    
+}
+
+</script>
 </html>
