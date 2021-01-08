@@ -6,8 +6,8 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: lightskyblue;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -28,7 +28,7 @@ button:hover {
 
 .imgcontainer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: -25px;
 }
 
@@ -40,7 +40,7 @@ img.avatar {
 
 .container {
   margin-bottom: 28px;
-  margin-left: 35%;
+  margin-left: 42%;
 }
 
 span.psw {
@@ -58,7 +58,6 @@ transform: translateX(-50%);
 </head>
 <body>
 
-<h2>Login Form</h2>
 
   <div class="imgcontainer">
     <img src="pic23.JPG" alt="Avatar" class="avatar">
@@ -66,7 +65,6 @@ transform: translateX(-50%);
   <p class= "button" style="font-weight: bold; font-size: 2vw;">BabynPosh</p>
 
   <div class="container">
-    <label for="psw" style="font-size: 2vw;"><b>Password:</b></label>
     <input id="password" placeholder="Enter Password" style="height: 2vw; width: 16vw;">
   </div>
   <div class= "button">      
@@ -79,7 +77,7 @@ transform: translateX(-50%);
     var pword = String(entry)
     if (pword == "hello") {
       return "http://localhost:8000/starter_website.html"
-    }   else {return "https://www.google.com/"}    
+    }   else {return "http://localhost:8000/login.html"}    
 }
 
 </script>

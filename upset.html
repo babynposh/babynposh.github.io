@@ -69,4 +69,14 @@
 
 
 </body>
+<script>
+    function ref() {
+        var x = document.referrer
+        if (x !== "http://localhost:8000/starter_website.html") {
+            window.location.href="http://localhost:8000/login.html"
+        }
+    }
+window.onload= ref()
+    
+</script>
 </html>

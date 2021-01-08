@@ -123,8 +123,14 @@ function closeNav() {
 
 </body>
   <script>
-var bflat = new Audio(); 
-  bflat.src = "Hello.m4a"; 
-  function PlaySound() { bflat.play(); } 
+  
+  function ref() {
+        var x = document.referrer
+        if (x == "") {
+            window.location.href="http://localhost:8000/login.html"
+        }
+    }
+window.onload= ref()
+    
   </script>
 </html>

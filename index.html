@@ -1,128 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Website</title>
-</head>
-
-<body style="background-color: lightblue;">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.center {text-align: center}
-.right {text-align: right}
-.left {text-align: left}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-body {
-  font-family: "Lato", sans-serif;
+button {
+  background-color: lightskyblue;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align:center;
+button:hover {
+  opacity: 0.8;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
 
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
 
-.sidenav a:hover{
-  color: #f1f1f1;
+.imgcontainer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -25px;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-
-  
-}
-* {
-  box-sizing: border-box;
+.container {
+  margin-bottom: 28px;
+  margin-left: 42%;
 }
 
-.row {
-  display: flex;}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.button {
+position: relative;
+display: inline-block;
+left: 50%;
+transform: translateX(-50%);
+}
 
-.column {
-  flex: 20%;
-  padding: 10px;}
 </style>
+</head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="miss.html">When you miss me</a>
-  <a href="stress.html">When you're feeling stressed</a>
-  <a href="sleep.html">When you can't fall asleep</a>
-  <a href="upset.html">When I make you upset</a>
-  <a href="memories.html">When you want to reminisce</a>
-  <a href="Surprise.html">When you want a surprise</a>
-</div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; How are you feeling today?</span>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-</body>
-
-<body>  
-
-<p class="center"; style="font-size: 2vw ; font-weight: bold; font-family: cursive;">Hi bubs!! Welcome to your website!
-    I know that the distance is hard and I can't always be with you,
-    but hopefully through this I can be there for you when you need me!!
-    I love you :) <3</p>
-<h1 class="center"; style="color: red;"> Harrison and Elizabeth</h1>
-<div class="row">
-    <div class="column">
-      <img src="pic0.jpg" alt="1" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="pic9.JPG" alt = "2" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="pic7.jpg" alt = "3" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="pic3.jpg" alt= "4" style="width:100%">
-      </div>
-    <div class="column">
-      <img src="pic14.jpg" alt= "5" style="width:100%">
-    </div>
+  <div class="imgcontainer">
+    <img src="pic23.JPG" alt="Avatar" class="avatar">
   </div>
+  <p class= "button" style="font-weight: bold; font-size: 2vw;">BabynPosh</p>
 
-
+  <div class="container">
+    <input id="password" placeholder="Enter Password" style="height: 2vw; width: 16vw;">
+  </div>
+  <div class= "button">      
+<button onclick="window.location.href=verify();" style="width: 150px;">Login</button>
+  </div>
 </body>
-  <script>
-var bflat = new Audio(); 
-  bflat.src = "Hello.m4a"; 
-  function PlaySound() { bflat.play(); } 
-  </script>
+<script language="JavaScript">
+    function verify() {
+    var entry = document.getElementById("password").value;
+    var pword = String(entry)
+    if (pword == "hello") {
+      return "http://localhost:8000/starter_website.html"
+    }   else {return "http://localhost:8000/login.html"}    
+}
+
+</script>
 </html>
