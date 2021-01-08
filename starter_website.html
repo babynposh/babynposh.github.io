@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+</head>
+
+<body style="background-color: lightblue;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {text-align: center}
+.right {text-align: right}
+.left {text-align: left}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/miss.html">When you miss me</a>
+  <a href="http://localhost:8000/stress.html">When you're feeling stressed</a>
+  <a href="http://localhost:8000/sleep.html">When you can't fall asleep</a>
+  <a href="http://localhost:8000/upset.html">When I make you upset</a>
+  <a href="http://localhost:8000/memories.html">When you want to reminisce</a>
+  <a href="http://localhost:8000/surprise.html">When you want a surprise</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; How are you feeling today?</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+
+<body>  
+
+<p class="center"; style="font-size: 2vw ; font-weight: bold; font-family: cursive;">Hi bubs!! Welcome to your website!
+    I know that the distance is hard and I can't always be with you,
+    but hopefully through this I can be there for you when you need me!!
+    I love you :) <3</p>
+<h1 class="center"; style="color: red;"> Harrison and Elizabeth</h1>
+<div class="row">
+    <div class="column">
+      <img src="pic0.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="pic9.JPG" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="pic7.JPG" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="pic3.jpg" style="width:100%">
+      </div>
+    <div class="column">
+      <img src="pic14.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+</body>
+  <script>
+var bflat = new Audio(); 
+  bflat.src = "Hello.m4a"; 
+  function PlaySound() { bflat.play(); } 
+  </script>
+</html>

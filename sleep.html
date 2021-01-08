@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nap Nap</title>
+</head>
+<style>
+.container {
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   width: 100vw;
+   height: 50vh; }
+ 
+ .center {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;}
+ 
+ .item1 { grid-row: 1 / 2; grid-column: 1 / 2; }
+ .item2 { grid-row: 1 / 2; grid-column: 2 / 3; }
+ 
+ .list { display: block;}
+</style>
+<body>
+
+<h1 style="text-align: center;">When You Can't Fall Asleep</h1>
+<p style="text-align: center;">Welcome to my ASMR Channel</p>
+</br>
+
+<div class="center">
+    <div class="container"> 
+        <div class="list item1">
+    <p style="font-weight: bold; font-size: 2vw;">When you want to hear me ramble</p>
+    <figure>
+        <audio
+            controls
+            src="sleepramble.m4a">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+    </div>
+    <div class="list item2">
+        <p style="font-weight: bold; font-size: 2vw;">When you want to experience ~ASMR~</p>
+        <figure>
+            <audio
+                controls
+                src="sleepasmr.m4a">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+        </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var sound1 = new Audio(); 
+      sound1.src = "Hello.m4a"; 
+      function PlaySound1() { sound1.play(); } 
+
+      var sound2 = new Audio(); 
+      sound2.src = "Hello.m4a"; 
+      function PlaySound2() { sound2.play(); }
+
+      var sound3 = new Audio(); 
+      sound3.src = "Hello.m4a"; 
+      function PlaySound3() { sound3.play(); }
+      </script>
+
+</body>
+</html>

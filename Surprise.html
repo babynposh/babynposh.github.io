@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surprise</title>
+</head>
+<style> 
+.container {
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-gap: 10px;
+   width: 100vw;
+   height: 50vh; }
+    
+    .item1 { grid-row: 1 / 2; grid-column: 1 / 2; }
+    .item2 { grid-row: 1 / 2; grid-column: 2 / 3; }
+    .item3 { grid-row: 2 / 3; grid-column: 1 / 2; }
+    .item4 { grid-row: 2 / 3; grid-column: 2 / 3; }
+
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;}
+     </style>
+<body>
+
+<h1 style="text-align: center;">When You Want A Surprise</h1>
+<p style="text-align: center;">Bloop</p>
+</br>
+<div class="container center">
+    <figure class="item1">
+    <figcaption>Click for a surprise!</figcaption>
+    <audio
+        controls
+        src="surprise1.m4a">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+<figure class = "item2">
+    <figcaption>Click for a surprise!</figcaption>
+    <audio
+        controls
+        src="surprise2.m4a">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+<figure class="item3">
+    <figcaption>Click for a surprise!</figcaption>
+    <audio
+        controls
+        src="surprise3.m4a">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+<figure class="item4">
+    <figcaption>Click for a surprise!</figcaption>
+    <audio
+        controls
+        src="surprise4.m4a">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+</div>
+
+</body>
+</body>
+</html>
