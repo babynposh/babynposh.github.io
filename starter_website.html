@@ -70,6 +70,12 @@ body {
   flex: 20%;
   padding: 10px;
 }
+
+.topright {
+  top: 0;
+  right: 0;
+}
+
 </style>
 <body>
 
@@ -83,6 +89,8 @@ body {
   <a href="https://babynposh.github.io/Surprise.html">When you want a surprise</a>
   <a href="https://babynposh.github.io/horny.html">When you're feeling horny</a>
 </div>
+
+<button class="topright" onclick="reminder()">Click for a reminder!</button>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; How are you feeling today?</span>
 
@@ -133,6 +141,10 @@ function closeNav() {
         }
     }
 window.onload= ref()
+
+    function reminder() {
+      alert("I Love You!!!")
+    }
     
   </script>
 </html>
